@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double temp, celcius, fahrenheit;
+    cout<<"The room's temperature (°C) : ";
+    cin>>temp;
+
+    celcius = temp;
+    fahrenheit = celcius * 1.8 + 32;
+
+    if (temp <= 15)
+    cout<<"\nIt's cold. Please, turn on the air conditioner!";
+        else if (temp >= 30)
+        cout<<"\nIt's hot. Please, turn on the heater!";
+            else
+            cout<<"\nThe room's temperature is normal.";
+
+    return 0;
+}
