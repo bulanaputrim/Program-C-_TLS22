@@ -5,16 +5,20 @@ using namespace std;
 int main()
 {
     double temp, celcius, fahrenheit;
-    cout<<"The room's temperature (°C) : ";
+    cout<<"The room's temperature is (C) : ";
     cin>>temp;
-
+    
     celcius = temp;
     fahrenheit = celcius * 1.8 + 32;
-
+    
+    cout<<"\nThe room's temperature :\n";
+    cout<<celcius<<" C\n";
+    cout<<fahrenheit<<" F\n";
+    
     if (temp <= 15)
-    cout<<"\nIt's cold. Please, turn on the air conditioner!";
+    cout<<"\nIt's cold. Please, turn on the heater!";
         else if (temp >= 30)
-        cout<<"\nIt's hot. Please, turn on the heater!";
+        cout<<"\nIt's hot. Please, turn on the air conditioner!";
             else
             cout<<"\nThe room's temperature is normal.";
 
